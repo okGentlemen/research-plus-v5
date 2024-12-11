@@ -1,0 +1,219 @@
+.login-modal {
+  .ant-modal-content {
+    border-radius: 12px;
+    padding: 24px;
+    background: linear-gradient(to bottom, #f5f6ff, #ffffff);
+  }
+
+  .ant-modal-close {
+    top: 16px;
+    right: 16px;
+    color: #666;
+  }
+
+  .login-modal-header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-tabs {
+    .ant-tabs-nav {
+      margin-bottom: 24px;
+
+      &::before {
+        display: none;
+      }
+
+      .ant-tabs-nav-list {
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+
+    .ant-tabs-tab {
+      padding: 8px 0;
+      margin: 0;
+      font-size: 15px;
+      color: #666;
+      transition: color 0.3s;
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: #6366f1;
+          font-weight: 500;
+        }
+      }
+
+      &:hover {
+        color: #6366f1;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background: #6366f1;
+      height: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  .ant-input,
+  .ant-input-password {
+    height: 44px;
+    border-radius: 8px;
+    border-color: #e5e7eb;
+    background: #fff;
+    
+    &:hover,
+    &:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+    }
+
+    input {
+      height: 42px;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #9ca3af;
+      }
+    }
+  }
+
+  .verify-code-input {
+    display: flex;
+    gap: 12px;
+
+    .ant-input {
+      flex: 1;
+    }
+
+    .send-code-btn {
+      width: 120px;
+      height: 44px;
+      border-radius: 8px;
+      font-size: 14px;
+      border-color: #e5e7eb;
+      color: #6366f1;
+      
+      &:not(:disabled):hover {
+        color: #818cf8;
+        border-color: #818cf8;
+      }
+
+      &:disabled {
+        color: #9ca3af;
+        border-color: #e5e7eb;
+        background: #f9fafb;
+      }
+    }
+  }
+
+  .ant-btn-primary {
+    height: 44px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #6366f1;
+    border: none;
+    
+    &:hover {
+      background: #818cf8;
+    }
+
+    &:active {
+      background: #4f46e5;
+    }
+  }
+
+  .agreement {
+    margin-top: 16px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+
+    a {
+      color: #6366f1;
+      text-decoration: none;
+      
+      &:hover {
+        color: #818cf8;
+      }
+    }
+
+    .ant-checkbox-wrapper {
+      color: #666;
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #6366f1;
+        border-color: #6366f1;
+      }
+
+      & + .ant-checkbox-wrapper {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .form-footer {
+    text-align: right;
+    margin: -4px 0 12px;
+
+    a {
+      color: #6366f1;
+      font-size: 14px;
+      text-decoration: none;
+      
+      &:hover {
+        color: #818cf8;
+      }
+    }
+  }
+
+  .qrcode-login {
+    text-align: center;
+    padding: 0 16px;
+
+    .qrcode-tip {
+      margin-bottom: 24px;
+      color: #374151;
+      font-size: 15px;
+
+      .wechat-icon {
+        color: #07C160;
+        margin-right: 8px;
+        font-size: 20px;
+        vertical-align: -4px;
+      }
+    }
+
+    .qrcode {
+      margin: 0 auto 24px;
+      padding: 12px;
+      width: fit-content;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .reset-password {
+    .reset-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .ant-btn {
+        font-size: 15px;
+        padding: 0;
+        height: auto;
+        color: #666;
+        
+        &:hover {
+          color: #6366f1;
+        }
+      }
+    }
+  }
+}
